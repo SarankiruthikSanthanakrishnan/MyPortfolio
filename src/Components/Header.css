@@ -10,19 +10,15 @@
   border-top: 2px solid transparent;
 transition: border-bottom 0.3s ease-in-out;
 transition: border-top 0.3s ease-in-out;
-padding: 10px!important;
+padding: 10px 20px!important;
 
 }
-
-
-
 
 /* Add this to your CSS file */
 .nav-link-glowing {
   color: white;
   text-decoration: none;
   border-radius:20px;
-
   transition: all 0.3s ease;
 }
 
