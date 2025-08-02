@@ -1,36 +1,28 @@
-/* src/styles/Projects.css */
 .projects-container {
-  background-color: #19171c; /* A dark background color */
+  background-color: #19171c;
   min-height: 100vh;
 }
 
 .projects-container h1 {
-  color: #f8f9fa; /* Light text color for contrast */
+  color: #f8f9fa;
 }
 
 .project-card-wrapper {
-  /* Default state for the card */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
   border-radius: 8px;
   overflow: hidden;
-  position: relative; /* Needed for the glow effect */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Stronger initial shadow */
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .project-card-wrapper:hover {
-  /* Hover state for a more visible effect */
-  transform: translateY(-5px); /* Moves the card up slightly */
-  
-  /* A powerful, glowing box shadow with a contrasting color */
-  box-shadow: 0 0 15px 5px #00bcd4, /* A colored glow */
-              0 8px 16px rgba(0, 0, 0, 0.45); /* A stronger lift shadow */
-
-  /* Change border color on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px 5px #00bcd4,
+              0 8px 16px rgba(0, 0, 0, 0.45);
   border: 1px solid #00bcd4;
 }
 
-/* Optional: To make the inner card structure look better on hover */
 .project-card-wrapper:hover .card-body1 {
-  background-color: #26212b; /* Slightly lighter background on hover */
+  background-color: #26212b;
 }
