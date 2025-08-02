@@ -25,11 +25,11 @@ const Header = () => {
             </button>
             <div id="nav" className="collapse navbar-collapse">
                 <ul className="navbar-nav ms-auto">
-                    <li className="navbar-item"><NavLink className="nav-link" to={"/"}>Home</NavLink></li>
-                    <li className="navbar-item"><NavLink className="nav-link" to={"/Resume"}>Resume</NavLink></li>
-                    <li className="navbar-item"><NavLink className="nav-link" to={"/Project"}>Projects</NavLink></li>
-                    <li className="navbar-item"><NavLink className="nav-link" to={"/Certifications"}>Certification</NavLink></li>
-                    <li className="navbar-item"><NavLink className="nav-link" to={"/Internships"}>Internships</NavLink></li>
+                    <li className="navbar-item"><NavLink className="nav-link nav-link-glowing" to={"/"}>Home</NavLink></li>
+                    <li className="navbar-item"><NavLink className="nav-link nav-link-glowing" to={"/Resume"}>Resume</NavLink></li>
+                    <li className="navbar-item"><NavLink className="nav-link nav-link-glowing" to={"/Project"}>Projects</NavLink></li>
+                    <li className="navbar-item"><NavLink className="nav-link nav-link-glowing" to={"/Certifications"}>Certification</NavLink></li>
+                    <li className="navbar-item"><NavLink className="nav-link nav-link-glowing" to={"/Internships"}>Internships</NavLink></li>
                     </ul>
             </div>
         </div>

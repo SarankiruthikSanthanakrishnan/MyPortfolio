@@ -5,16 +5,31 @@
   box-sizing:border-box;
 }
 
-.navLink{
+.nav-link{
   border-bottom: 2px solid transparent;
   border-top: 2px solid transparent;
 transition: border-bottom 0.3s ease-in-out;
 transition: border-top 0.3s ease-in-out;
+padding: 10px!important;
 
 }
 
-.nav-link.active{
-    border-radius: 10px;
-  border-bottom: 2px dashed cyan;
-    border-top: 2px dotted cyan;
+
+
+
+/* Add this to your CSS file */
+.nav-link-glowing {
+  color: white;
+  text-decoration: none;
+  border-radius:20px;
+
+  transition: all 0.3s ease;
+}
+
+.nav-link-glowing:hover,
+.nav-link-glowing.active {
+  color: #576DDB;
+    border-bottom: 2px solid #576DDB; /* A base border color */
+  box-shadow: 0 0 5px #576DDB, inset 0 0 5px #576DDB; /* The glow effect */
+  box-shadow: 0 0 10px #576DDB, inset 0 0 10px #576DDB; /* A stronger glow on hover */
 }
