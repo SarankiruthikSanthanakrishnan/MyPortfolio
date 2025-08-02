@@ -2,6 +2,7 @@ import {useEffect} from 'react'
 import Saran from '../assets/saran.jpg';
 import './Home.css'
 import Footer from './Footer';
+import CV from '../assets/Resume.pdf'
 
 const Home = () => {
 
@@ -33,7 +34,7 @@ const Home = () => {
                     <div className="d-flex justify-content-center ">
                         <a
                             className="btn btn-success fw-bold w-100"
-                            href="Resume.pdf"
+                            href={CV}
                             download="SARAN KIRUTHik S S"
                         >
                             <i className="bi bi-download"></i>

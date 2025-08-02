@@ -1,0 +1,28 @@
+[
+  {
+    "title": "My Portfolio",
+    "technology": "Web Development - Bootstrap",
+    "duration": "December 2023 - January 2024",
+    "link": "https://sarankiruthik.netlify.app/"
+  },
+  {
+    "title": "Hall Ticket Publishing Website For Vaagai Tamil Sangam",
+    "technology": "Web Development - Bootstrap, PHP, MySql",
+    "duration": "September 2024 - December 2024",
+    "organization": "Vaagai Tamil Sangam , Nammakkal",
+    "link": "https://github.com/SarankiruthikSanthanakrishnan/Vaagai-Hallticket"
+  },
+  {
+    "title": "Website for Anna University CGPA Calculator",
+    "technology": "Web Development - HTML, CSS, JS",
+    "duration": "August 2024 - September 2024",
+    "link": "https://anna-cgpa-calculator.netlify.app/"
+  },
+  {
+    "title": "Website for Grow Together (Startup_2k25)",
+    "technology": "Web Development - Bootstrap",
+    "duration": "December 2025 - February 2025",
+    "organization": "Grow Together , Erode",
+    "link": "https://grow2gather.netlify.app/"
+  }
+]
