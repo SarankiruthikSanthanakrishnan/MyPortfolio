@@ -1,45 +1,52 @@
 // ProjectCard.jsx
 import React from 'react';
+import './Project.css';
 
 const ProjectCard = ({ project }) => {
+  const technologies = project.technology.split(',').map(tech => tech.trim());
+
   return (
-    <>
-    <div className="card-body1 my-4">
-      <table className="table text-center table-borderless text-light">
-        <tbody>
-          <tr>
-            <td colSpan="3" className="text-center">
-              <h1 className="display-3">{project.title}</h1>
-            </td>
-          </tr>
-          <tr>
-            <td className="fs-5">Technology</td>
-            <td className="fs-5">:</td>
-            <td className="fs-5">{project.technology}</td>
-          </tr>
-          <tr>
-            <td className="fs-5">Duration</td>
-            <td className="fs-5">:</td>
-            <td className="fs-5">{project.duration}</td>
-          </tr>
-          {project.organization && (
-            <tr>
-              <td className="fs-5">Organization</td>
-              <td className="fs-5">:</td>
-              <td className="fs-5">{project.organization}</td>
-            </tr>
-          )}
-          <tr>
-            <td colSpan="3" className="text-center">
-              <a className="btn btn-primary" href={project.link}>
-                <i className="bi bi-eye"></i> View Project
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="project-card">
+      <div className="card-header">
+        <h3 className="project-title">{project.title}</h3>
+        <p className="project-duration">{project.duration}</p>
+      </div>
+      
+      <div className="card-body">
+        <div className="technologies-container">
+          {technologies.map((tech, index) => (
+            <span key={index} className="technology-tag">{tech}</span>
+          ))}
+        </div>
+        
+        {project.organization && (
+          <p className="project-organization">
+            <span className="fw-bold">Organization:</span> {project.organization}
+          </p>
+        )}
+      </div>
+
+      <div className="card-footer d-flex justify-content-between gap-3">
+        {project.demoLink && (
+          <a
+            className="shaded-link"
+            href={project.demoLink}
+            target="_blank"
+          >
+            <i className="bi bi-box-arrow-up-right me-2"></i> Demo Site
+          </a>
+        )}
+        {project.codeLink && (
+          <a
+            className="shaded-link"
+            href={project.codeLink}
+            target="_blank"
+          >
+            <i className="bi bi-code-slash me-2"></i> View Project
+          </a>
+        )}
+      </div>
     </div>
-    </>
   );
 };
 

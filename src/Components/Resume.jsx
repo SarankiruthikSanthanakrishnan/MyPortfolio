@@ -37,15 +37,15 @@ const Resume = () => {
               {/* Left Column for the Map */}
               <div className="col-12 col-lg-6">
                 <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                    src="https://maps.google.com/maps?q=Solakkalipalayam,Chennasamudram&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    width="100%"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                <iframe
+          src="https://maps.google.com/maps?q=Solakkalipalayam,Chennasamudram&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="eager"
+          title="Google Map Location"
+        ></iframe>
                 </div>
               </div>
 
@@ -54,31 +54,31 @@ const Resume = () => {
                 <table className="table table-borderless text-light fs-5">
                   <tbody>
                     <tr>
-                      <td className="fw-bold text-danger" style={{ width: "120px" }}>
-                        Name:
+                      <td className="fw-bold text-light" style={{ width: "120px" }}>
+                        Name
                       </td>
-                      <td>SARAN KIRUTHIK S S</td>
+                      <td>: SARAN KIRUTHIK S S</td>
                     </tr>
                     <tr>
-                      <td className="fw-bold text-danger">Address:</td>
-                      <td>57/3,East Street, Government Hospital Road, Solakkalipalayam,Chennasamudram, Kodumudi,Tamilnadu</td>
+                      <td className="fw-bold text-light">Address</td>
+                      <td>: 57/3,East Street, Government Hospital Road, Solakkalipalayam,Chennasamudram, Kodumudi,Tamilnadu</td>
                     </tr>
                     <tr>
-                      <td className="fw-bold text-danger">
-                        <i className="bi bi-telephone-fill me-2"></i>Phone:
+                      <td className="fw-bold text-light">
+                        <i className="bi bi-telephone-fill me-2"></i>Phone
                       </td>
-                      <td>+91 8072682003</td>
+                      <td>: +91 8072682003</td>
                     </tr>
                     <tr>
-                      <td className="fw-bold text-danger">
-                        <i className="bi bi-envelope me-2"></i>E-mail:
+                      <td className="fw-bold text-light">
+                        <i className="bi bi-envelope me-2"></i>E-mail
                       </td>
                       <td>
                         <a
                           style={{ textDecoration: "none", color: "white" }}
                           href="mailto:skiruthik2510@gmail.com"
                         >
-                          skiruthik2510@gmail.com
+                          : skiruthik2510@gmail.com
                         </a>
                       </td>
                     </tr>
@@ -198,10 +198,6 @@ const Resume = () => {
                 <li className="col-12">
                   <i className="bi bi-check2-circle text-light me-2"></i>
                   Programmer
-                </li>
-                <li className="col-12">
-                  <i className="bi bi-check2-circle text-light me-2"></i>Data
-                  Scientist
                 </li>
                 <li className="col-12">
                   <i className="bi bi-check2-circle text-light me-2"></i>Web
