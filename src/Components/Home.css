@@ -64,3 +64,9 @@
 .bg-purple {
     background-color: #6f42c1 !important; /* A common shade of purple */
 }
+
+.profile-img {
+    max-width: 400px;
+    height: auto;
+    width: 100%; 
+}
