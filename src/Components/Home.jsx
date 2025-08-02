@@ -157,39 +157,39 @@ const Home = () => {
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-java"></i>&nbsp;Core Java Programming Language</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Core Java skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-success" style={{width: '35%'}}>35%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '35%'}}>35%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-c-circle"></i> C Programming Language</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="C skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-warning" style={{width: '80%'}}>80%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '80%'}}>80%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-file-earmark-spreadsheet-fill"></i>&nbsp;Excel</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Excel skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-danger" style={{width: '40%'}}>40%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '40%'}}>40%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-code-slash"></i>&nbsp;Web Development</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Web Development skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-primary" style={{width: '75%'}}>75%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '75%'}}>75%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-camera2"></i>&nbsp;Adobe Photoshop</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Adobe Photoshop skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-dark" style={{width: '30%'}}>30%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '30%'}}>30%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-sql"></i>&nbsp;Structure Query Language</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="SQL skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-info" style={{width: '50%'}}>50%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '50%'}}>50%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-php"></i>&nbsp;PHP</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="PHP skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-success" style={{width: '85%'}}>85%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '85%'}}>85%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-js"></i>&nbsp;JavaScript</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="JavaScript skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-warning" style={{width: '85%'}}>85%</div>
+                            <div className="progress-bar rple-bar-striped progress-bar-animated bg-purple" style={{width: '85%'}}>85%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-jsx"></i>&nbsp;React js</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="JavaScript skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-danger" style={{width: '75%'}}>75%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '75%'}}>75%</div>
                         </div>
                     </div>
                 </div>

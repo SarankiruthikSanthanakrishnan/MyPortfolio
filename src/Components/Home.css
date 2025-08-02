@@ -59,3 +59,8 @@
   font-weight: bold;
   color:red;
 }
+
+/* src/Custom.css */
+.bg-purple {
+    background-color: #6f42c1 !important; /* A common shade of purple */
+}
