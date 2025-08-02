@@ -1,6 +1,6 @@
 // Project.jsx
 import { useEffect } from 'react';
-import projectsData from '../assets/Product.json';
+import projectsData from '../assets/Project.json';
 import ProjectCard from './ProjectCard';
 import './Project.css'; 
 import Footer from './Footer';

@@ -1,0 +1,38 @@
+
+[
+  {
+    "id": 1,
+    "course": "Full Stack Web Development",
+    "conductor": "Codecademy",
+    "imageSrc": "https://via.placeholder.com/600x400/007bff/ffffff?text=Web+Dev+Certificate",
+    "link": "https://example.com/certificate1"
+  },
+  {
+    "id": 2,
+    "course": "Data Science Fundamentals",
+    "conductor": "Coursera",
+    "imageSrc": "https://via.placeholder.com/600x400/28a745/ffffff?text=Data+Science+Certificate",
+    "link": "https://example.com/certificate2"
+  },
+  {
+    "id": 3,
+    "course": "Python for Everybody",
+    "conductor": "University of Michigan",
+    "imageSrc": "https://via.placeholder.com/600x400/ffc107/333333?text=Python+Certificate",
+    "link": "https://example.com/certificate3"
+  },
+  {
+    "id": 4,
+    "course": "Artificial Intelligence & Data Science",
+    "conductor": "NoviTech R&D Pvt Ltd",
+    "imageSrc": "https://via.placeholder.com/600x400/17a2b8/ffffff?text=AI+Certificate",
+    "link": "https://example.com/certificate4"
+  },
+  {
+    "id": 5,
+    "course": "Cloud Computing",
+    "conductor": "Google",
+    "imageSrc": "https://via.placeholder.com/600x400/fd7e14/ffffff?text=Cloud+Certificate",
+    "link": ""
+  }
+]
