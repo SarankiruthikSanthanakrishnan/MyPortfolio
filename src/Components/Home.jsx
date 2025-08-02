@@ -154,7 +154,7 @@ const Home = () => {
                         {/* Skills with colored progress bars */}
                         <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-py"></i>&nbsp;Python Programming Language</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Python skill">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-info" style={{width: '60%'}}>60%</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '60%'}}>60%</div>
                         </div>
                         <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-java"></i>&nbsp;Core Java Programming Language</h3>
                         <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Core Java skill">

@@ -1,14 +1,15 @@
 import { useEffect } from 'react';
 import projectsData from '../assets/Product.json';
 import ProjectCard from './ProjectCard';
-import './Project.css'; // Make sure to create and link this CSS file
+import './Project.css'; 
+import Footer from './Footer';
 
 const Project = () => {
   useEffect(() => {
     document.title = 'Sarankiruthik | Projects';
   }, []);
-
   return (
+   <>
     <section className="projects-container py-5">
       <div className="container-fluid">
         {/* Main Heading for the Projects Section */}
@@ -26,7 +27,10 @@ const Project = () => {
           </div>
         </div>
       </div>
-    </section>
+  </section>
+        <Footer/>
+   </>
+ 
   );
 };
 

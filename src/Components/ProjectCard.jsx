@@ -3,6 +3,7 @@ import React from 'react';
 
 const ProjectCard = ({ project }) => {
   return (
+    <>
     <div className="card-body1 my-4">
       <table className="table text-center table-borderless text-light">
         <tbody>
@@ -38,6 +39,7 @@ const ProjectCard = ({ project }) => {
         </tbody>
       </table>
     </div>
+    </>
   );
 };
 
