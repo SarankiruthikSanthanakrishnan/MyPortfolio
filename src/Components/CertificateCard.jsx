@@ -11,7 +11,7 @@ const imageUrl = createGitHubImageUrl(fileNameWithSpaces);
   return (
     <>
     <div className="card wrapper  h-100" style={{width: '22rem'}}>
-    <img src={imageUrl} className="card-img-top img-thumbnail w-100 " style={{width:"200px",objectFit:'cover'}} alt="Image"/>
+    <img src={imageUrl} className="card-img-top img-thumbnail w-100 " style={{width:"200px",objectFit:'cover'}}/>
   <div className="card-body">
     <h5 className="card-title text-primary">{certificateTitle}</h5>
     <p className="card-text">{conductor}</p>

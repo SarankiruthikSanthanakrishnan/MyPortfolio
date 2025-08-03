@@ -1,0 +1,66 @@
+[
+  {
+      "id": 1,
+    "course": "Arttifia Tech",
+    "conductor": "Internships",
+    "imageSrc": "Internships/Arttifai Tech Certificate.jpg",
+    "DataofIssue":"07th June 2025",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "course": "CodeAlpha Tech",
+    "conductor": "Internships",
+    "imageSrc": "Internships/CodeAlpha Certificate.jpg",
+    "DataofIssue":"01st September 2024",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "course": "Codsoft Technologies",
+    "conductor": "Internships",
+    "imageSrc": "Internships/Codsoft Certificate.jpg",
+    "DataofIssue":"08th June 2024",
+    "link": "#"
+  },
+    {
+    "id": 4,
+    "course": "TechVedhu",
+    "conductor": "TechVedhu",
+    "imageSrc": "TechVedhu%20DS%20Course%20.png",
+    "DataofIssue":"31st August 2024",
+    "link": "#"
+  },
+   {
+    "id": 5,
+    "course": "TechNoHacks Pvt Ltd",
+    "conductor": "Internships",
+    "imageSrc": "Internships/TechNoHacks Certificate.jpg",
+    "DataofIssue":"07th October 2024",
+    "link": "#"
+  },
+   {
+    "id": 6,
+    "course": "Cognifiyz Technologies",
+    "conductor": "Internships",
+    "imageSrc": "Internships/Cognifiyz Technologies Certificate.jpg",
+    "DataofIssue":"12th June 2024",
+    "link": "#"
+  },
+    {
+    "id": 7,
+    "course": "SMEC Clabs",
+    "conductor": "Internships",
+    "imageSrc": "Internships/SMEC Internship.jpg",
+    "DataofIssue":"3rd April 2024",
+    "link": "#"
+  },
+  {
+    "id": 8,
+    "course": "TechVedhu DS Internship",
+    "conductor": "Internships",
+    "imageSrc": "Internships/TechVedhu%20DS%20Internship.png",
+    "DataofIssue":"31st August 2024",
+    "link": "#"
+  }
+]
