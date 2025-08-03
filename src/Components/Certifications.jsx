@@ -14,7 +14,7 @@ const Certifications = () => {
     <>
       <div className="certificate-container container mx-auto">
         {certificatesData.map((certificate) => (
-          <CertificateCard key={certificate.id}  certificateTitle={certificate.course}     />
+          <CertificateCard key={certificate.id}  certificateTitle={certificate.course} certificateImg={certificate.imageSrc}  conductor={certificate.conductor}  />
         ))}
       </div>
       <Footer />

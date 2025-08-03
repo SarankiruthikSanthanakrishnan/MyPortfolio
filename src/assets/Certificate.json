@@ -1,38 +1,246 @@
-
-[
-  {
+ [{
     "id": 1,
-    "course": "Full Stack Web Development",
-    "conductor": "Codecademy",
-    "imageSrc": "https://via.placeholder.com/600x400/007bff/ffffff?text=Web+Dev+Certificate",
-    "link": "https://example.com/certificate1"
+    "course": "Kongunadu College",
+    "conductor": "College Events",
+    "imageSrc": "College%20Events/Kongunadu%20College",
+    "link": "#"
   },
   {
     "id": 2,
-    "course": "Data Science Fundamentals",
-    "conductor": "Coursera",
-    "imageSrc": "https://via.placeholder.com/600x400/28a745/ffffff?text=Data+Science+Certificate",
-    "link": "https://example.com/certificate2"
+    "course": "Muththaymmal Symposium",
+    "conductor": "College Events",
+    "imageSrc": "College%20Events/Muththaymmal%20Symposium",
+    "link": "#"
   },
   {
     "id": 3,
-    "course": "Python for Everybody",
-    "conductor": "University of Michigan",
-    "imageSrc": "https://via.placeholder.com/600x400/ffc107/333333?text=Python+Certificate",
-    "link": "https://example.com/certificate3"
+    "course": "Selvam ASTA 2K24",
+    "conductor": "College Events",
+    "imageSrc": "College%20Events/Selvam%20ASTA%202K24",
+    "link": "#"
   },
   {
     "id": 4,
-    "course": "Artificial Intelligence & Data Science",
-    "conductor": "NoviTech R&D Pvt Ltd",
-    "imageSrc": "https://via.placeholder.com/600x400/17a2b8/ffffff?text=AI+Certificate",
-    "link": "https://example.com/certificate4"
+    "course": "Selvam ASTA 2K25",
+    "conductor": "College Events",
+    "imageSrc": "College%20Events/Selvam%20ASTA%202K25",
+    "link": "#"
   },
   {
     "id": 5,
-    "course": "Cloud Computing",
-    "conductor": "Google",
-    "imageSrc": "https://via.placeholder.com/600x400/fd7e14/ffffff?text=Cloud+Certificate",
-    "link": ""
+    "course": "VR Soft Tech",
+    "conductor": "College Events",
+    "imageSrc": "College%20Events/VR%20Soft%20Tech",
+    "link": "#"
+  },
+  
+
+  {
+    "id": 6,
+    "course": "C FOR BEGINNERS",
+    "conductor": "Great Learning",
+    "imageSrc": "Great%20Learning/C%20FOR%20BEGINNERS",
+    "link": "#"
+  },
+  {
+    "id": 7,
+    "course": "Front End Development",
+    "conductor": "Great Learning",
+    "imageSrc": "Great%20Learning/Front%20End%20Development",
+    "link": "#"
+  },
+  {
+    "id": 8,
+    "course": "HTML CERTIFICATE",
+    "conductor": "Great Learning",
+    "imageSrc": "Great%20Learning/HTML%20CERTIFICATE",
+    "link": "#"
+  },
+  
+
+  {
+    "id": 9,
+    "course": "Java Certificate Hacker Rank",
+    "conductor": "Hacker Rank",
+    "imageSrc": "Hacker%20Rank/Java%20Certificate%20Hacker%20Rank",
+    "link": "#"
+  },
+  {
+    "id": 10,
+    "course": "JavaScript Basic Certificate",
+    "conductor": "Hacker Rank",
+    "imageSrc": "Hacker%20Rank/javascript_basic%20certificate",
+    "link": "#"
+  },
+
+  {
+    "id": 11,
+    "course": "Arttifia Tech Certificate",
+    "conductor": "Internships",
+    "imageSrc": "Internships/Arttifia%20Tech%20Certificate",
+    "link": "#"
+  },
+  {
+    "id": 12,
+    "course": "CodeAlpha Certificate",
+    "conductor": "Internships",
+    "imageSrc": "Internships/CodeAlpha%20Certificate",
+    "link": "#"
+  },
+  {
+    "id": 13,
+    "course": "Codsoft Certificate",
+    "conductor": "Internships",
+    "imageSrc": "Internships/Codsoft%20Certificate",
+    "link": "#"
+  },
+  {
+    "id": 14,
+    "course": "Cognifiyz Technologies Certificate",
+    "conductor": "Internships",
+    "imageSrc": "Internships/Cognifiyz%20Technologies%20Certificate",
+    "link": "#"
+  },
+  {
+    "id": 15,
+    "course": "SMEC Internship",
+    "conductor": "Internships",
+    "imageSrc": "Internships/SMEC%20internship",
+    "link": "#"
+  },
+  {
+    "id": 16,
+    "course": "TechNoHacks Certificate",
+    "conductor": "Internships",
+    "imageSrc": "Internships/TechNoHacks%20Certificate",
+    "link": "#"
+  },
+  {
+    "id": 17,
+    "course": "TechVedhu DS Internship",
+    "conductor": "Internships",
+    "imageSrc": "Internships/TechVedhu%20DS%20Internship",
+    "link": "#"
+  },
+  {
+    "id": 18,
+    "course": "TechVedhu DS Course",
+    "conductor": "TechVedhu",
+    "imageSrc": "TechVedhu%20DS%20Course ",
+    "link": "#"
+  },
+  
+
+  {
+    "id": 19,
+    "course": "NoviTech FSD Sertificate",
+    "conductor": "Novi Tech R & D",
+    "imageSrc": "Novi%20Tech%20R%20%26%20D/NoviTech%20FSD%20Sertificate",
+    "link": "#"
+  },
+  {
+    "id": 20,
+    "course": "NoviTech Certificate",
+    "conductor": "Novi Tech R & D",
+    "imageSrc": "Novi%20Tech%20R%20%26%20D/NoviTech%20Certificate",
+    "link": "#"
+  },
+  {
+    "id": 21,
+    "course": "React Js Bootcamp",
+    "conductor": "Novi Tech R & D",
+    "imageSrc": "Novi%20Tech%20R%20%26%20D/React%20Js%20Bootcamp",
+    "link": "#"
+  },
+  
+
+  {
+    "id": 22,
+    "course": "S.S.C. Program",
+    "conductor": "Simple Learn",
+    "imageSrc": "Simple%20Learn/SARANKIRUTHIK%20S%20S%20C%20program%20simplelearn",
+    "link": "#"
+  },
+  
+
+  {
+    "id": 23,
+    "course": "Cyber Security",
+    "conductor": "Tech Mahindra",
+    "imageSrc": "Tech%20Mahindra/Tech%20Mahendra%20Cyber%20Security",
+    "link": "#"
+  },
+  
+  {
+    "id": 24,
+    "course": "Tutor Joes",
+    "conductor": "Tutor Joes",
+    "imageSrc": "Tutor%20Joes/Tutor%20Joes",
+    "link": "#"
+  },
+  
+  {
+    "id": 25,
+    "course": "Microsoft Excel - Excel Course For Beginners",
+    "conductor": "Udemy",
+    "imageSrc": "Udemy/Microsoft%20Excel%20-%20Excel%20Course%20For%20Beginners",
+    "link": "#"
+  },
+  {
+    "id": 26,
+    "course": "PHP with MySQL Bulid 5 PHP and MySQL Projects",
+    "conductor": "Udemy",
+    "imageSrc": "Udemy/PHP%20with%20MySQL%20Bulid%205%20PHP%20and%20MySQL%20Projects",
+    "link": "#"
+  },
+  {
+    "id": 27,
+    "course": "Web Development Bootcamp Python Django Web Course",
+    "conductor": "Udemy",
+    "imageSrc": "Udemy/Web%20Development%20Bootcamp%20Python%20Django%20Web%20Course",
+    "link": "#"
+  },
+  
+  {
+    "id": 28,
+    "course": "Core Java Programming",
+    "conductor": "Vaagai",
+    "imageSrc": "Vaagai/Core%20Java%20Programming",
+    "link": "#"
+  },
+  {
+    "id": 29,
+    "course": "Emotional Intelligence",
+    "conductor": "Vaagai",
+    "imageSrc": "Vaagai/Emotional%20Intelligence",
+    "link": "#"
+  },
+  {
+    "id": 30,
+    "course": "Kaninitamil",
+    "conductor": "Vaagai",
+    "imageSrc": "Vaagai/Kaninitamil",
+    "link": "#"
+  },
+  {
+    "id": 31,
+    "course": "Python Programming",
+    "conductor": "Vaagai",
+    "imageSrc": "Vaagai/Python%20Programming",
+    "link": "#"
+  },
+  {
+    "id": 32,
+    "course": "Website 2.0",
+    "conductor": "Vaagai",
+    "imageSrc": "Vaagai/Website%202.0",
+    "link": "#"
+  },
+  {
+    "id": 33,
+    "course": "Enmin Certificate",
+    "conductor": "Vaagai",
+    "imageSrc": "Vaagai/enmin%20certificate",
+    "link": "#"
   }
 ]
