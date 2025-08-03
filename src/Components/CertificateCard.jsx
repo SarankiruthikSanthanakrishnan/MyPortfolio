@@ -1,6 +1,4 @@
-// CertificateCard.jsx
-import React from 'react';
-import './Card.css'; // Assuming this is your CSS file
+import './Card.css'; 
 
 const CertificateCard = ({certificateTitle,certificateImg,conductor}) => {
      function createGitHubImageUrl(fileName) {
