@@ -7,3 +7,12 @@
   align-items: center;
 }
 
+.card{
+  transition: transform 0.5s ease-in-out;
+  transform: box-shadow 0.5s ease-in-out;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px 5px cyan;
+}

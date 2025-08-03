@@ -13,9 +13,17 @@ const Certifications = () => {
   return (
     <>
       <div className="certificate-container container mx-auto">
-        {certificatesData.map((certificate) => (
-          <CertificateCard key={certificate.id}  certificateTitle={certificate.course} certificateImg={certificate.imageSrc}  conductor={certificate.conductor}  />
-        ))}
+        <div className="row g-4"> 
+          {certificatesData.map((certificate) => (
+            <div className="col-12 col-md-6 col-lg-4" style={{marginTop:'60px'}}  key={certificate.id}>
+              <CertificateCard
+                certificateTitle={certificate.course}
+                certificateImg={certificate.imageSrc}
+                conductor={certificate.conductor}
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <Footer />
     </>
