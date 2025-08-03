@@ -1,4 +1,5 @@
-import './Card.css'
+import './Certificate.css'
+
 const CertificateCard = ({certificateTitle,certificateImg,conductor,dateofissue}) => {
      function createGitHubImageUrl(fileName) {
   const baseUrl = "https://raw.githubusercontent.com/SarankiruthikSanthanakrishnan/FIles/main/";
@@ -9,7 +10,7 @@ const fileNameWithSpaces = certificateImg;
 const imageUrl = createGitHubImageUrl(fileNameWithSpaces);
   return (
     <>
-    <div className="card  h-100" style={{width: '22rem'}}>
+    <div className="card wrapper  h-100" style={{width: '22rem'}}>
     <img src={imageUrl} className="card-img-top img-thumbnail w-100 " style={{width:"200px",objectFit:'cover'}} alt="Image"/>
   <div className="card-body">
     <h5 className="card-title text-primary">{certificateTitle}</h5>

@@ -35,7 +35,7 @@ const Resume = () => {
           <div className="card-body">
             <div className="row g-4 d-flex align-items-center">
               {/* Left Column for the Map */}
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-4">
                 <div className="embed-responsive embed-responsive-16by9">
                 <iframe
           src="https://maps.google.com/maps?q=Solakkalipalayam,Chennasamudram&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -50,35 +50,31 @@ const Resume = () => {
               </div>
 
               {/* Right Column for the Data Table */}
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-8 w-lg-100" >
                 <table className="table table-borderless text-light fs-5">
                   <tbody>
                     <tr>
-                      <td className="fw-bold text-light" style={{ width: "120px" }}>
+                      <td className="fw-bold text-light w-25" >
                         Name
                       </td>
-                      <td>: SARAN KIRUTHIK S S</td>
+                      <td >: SARAN KIRUTHIK S S</td>
                     </tr>
                     <tr>
-                      <td className="fw-bold text-light">Address</td>
-                      <td>: 57/3,East Street, Government Hospital Road, Solakkalipalayam,Chennasamudram, Kodumudi,Tamilnadu</td>
+                      <td className="fw-bold text-light w-25">Address</td>
+                      <td >: 57/3,East Street, Government Hospital Road, Solakkalipalayam,<br />Chennasamudram, Kodumudi,Tamilnadu</td>
                     </tr>
                     <tr>
-                      <td className="fw-bold text-light">
-                        <i className="bi bi-telephone-fill me-2"></i>Phone
+                      <td className="fw-bold text-light w-25">Phone
                       </td>
                       <td>: +91 8072682003</td>
                     </tr>
                     <tr>
-                      <td className="fw-bold text-light">
-                        <i className="bi bi-envelope me-2"></i>E-mail
-                      </td>
+                      <td className="fw-bold text-light w-25">Email</td>
                       <td>
-                        <a
+                        <a className="w-75"
                           style={{ textDecoration: "none", color: "white" }}
                           href="mailto:skiruthik2510@gmail.com"
-                        >
-                          : skiruthik2510@gmail.com
+                        >: skiruthik2510@gmail.com
                         </a>
                       </td>
                     </tr>

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import CertificateCard from "./CertificateCard";
 import certificatesData from "../assets/Certificate.json";
 import Footer from "./Footer";
-import "./Card.css";
+import './Certificate.css'
 
 const Certifications = () => {
   useEffect(() => {

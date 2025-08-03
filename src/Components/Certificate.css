@@ -9,14 +9,14 @@
   background-color:black
 }
 
-.card{
+.wrapper{
   transition: transform 0.5s ease-in-out;
   transform: box-shadow 0.5s ease-in-out;
   background-color: #2b2b2b;
   color:white;
 }
 
-.card:hover{
+.wrapper:hover{
   transform: translateY(-10px);
   box-shadow: 0px 0px 20px 5px cyan;
 }
