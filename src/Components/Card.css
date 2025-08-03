@@ -3,13 +3,17 @@
   flex-direction: row;
   text-align: center;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+}
+
+.main{
+  background-color:black
 }
 
 .card{
   transition: transform 0.5s ease-in-out;
   transform: box-shadow 0.5s ease-in-out;
+  background-color: #2b2b2b;
+  color:white;
 }
 
 .card:hover{
