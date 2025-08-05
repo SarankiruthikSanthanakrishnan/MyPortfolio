@@ -1,66 +1,66 @@
 [
   {
-      "id": 1,
+    "id": 1,
     "course": "Arttifia Tech",
-    "conductor": "Internships",
+    "conductor": "Full Stack Development Internship",
     "imageSrc": "Internships/Arttifai Tech Certificate.jpg",
-    "DataofIssue":"07th June 2025",
+    "DataofIssue": "07th June 2025",
     "link": "#"
   },
   {
     "id": 2,
     "course": "CodeAlpha Tech",
-    "conductor": "Internships",
+    "conductor": "Front End Development Internship",
     "imageSrc": "Internships/CodeAlpha Certificate.jpg",
-    "DataofIssue":"01st September 2024",
+    "DataofIssue": "01st September 2024",
     "link": "#"
   },
   {
     "id": 3,
     "course": "Codsoft Technologies",
-    "conductor": "Internships",
+    "conductor": "Web Development Internship",
     "imageSrc": "Internships/Codsoft Certificate.jpg",
-    "DataofIssue":"08th June 2024",
+    "DataofIssue": "08th June 2024",
     "link": "#"
   },
-    {
+  {
     "id": 4,
     "course": "TechVedhu",
-    "conductor": "TechVedhu",
+    "conductor": "Data Science Course",
     "imageSrc": "TechVedhu%20DS%20Course%20.png",
-    "DataofIssue":"31st August 2024",
+    "DataofIssue": "31st August 2024",
     "link": "#"
   },
-   {
+  {
     "id": 5,
-    "course": "TechNoHacks Pvt Ltd",
-    "conductor": "Internships",
+    "course": "TechNoHacks Solutions Pvt Ltd",
+    "conductor": "Web Development Internship",
     "imageSrc": "Internships/TechNoHacks Certificate.jpg",
-    "DataofIssue":"07th October 2024",
+    "DataofIssue": "07th October 2024",
     "link": "#"
   },
-   {
+  {
     "id": 6,
     "course": "Cognifiyz Technologies",
-    "conductor": "Internships",
+    "conductor": "Web Development Internship",
     "imageSrc": "Internships/Cognifiyz Technologies Certificate.jpg",
-    "DataofIssue":"12th June 2024",
+    "DataofIssue": "12th June 2024",
     "link": "#"
   },
-    {
+  {
     "id": 7,
     "course": "SMEC Clabs",
-    "conductor": "Internships",
+    "conductor": "Artificial Intelligence and Data Science Internship",
     "imageSrc": "Internships/SMEC Internship.jpg",
-    "DataofIssue":"3rd April 2024",
+    "DataofIssue": "3rd April 2024",
     "link": "#"
   },
   {
     "id": 8,
     "course": "TechVedhu DS Internship",
-    "conductor": "Internships",
+    "conductor": "Data Science Internship",
     "imageSrc": "Internships/TechVedhu%20DS%20Internship.png",
-    "DataofIssue":"31st August 2024",
+    "DataofIssue": "31st August 2024",
     "link": "#"
   }
 ]
