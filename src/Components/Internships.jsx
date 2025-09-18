@@ -28,7 +28,7 @@ const Internships = () => {
           >
             <div className={`col-md-5 card shadow-sm p-4 ${index % 2 === 0 ? 'me-auto' : 'ms-auto'}`}>
               <div className="d-flex align-items-center">
-                <span 
+                <span
                   className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
                   style={{ width: '30px', height: '30px' }}
                 >
