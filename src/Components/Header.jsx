@@ -14,7 +14,7 @@ const Header = () => {
     };
 
     const currentPageTitle = pageTitles[location.pathname] || "Portfolio";
-  return (
+return (
     <>
     <div className="navbar bg-dark navbar-dark navbar-expand-sm ">
         <div className="container-fluid">

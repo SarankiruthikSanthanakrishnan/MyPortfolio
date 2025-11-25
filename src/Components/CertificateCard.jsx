@@ -69,4 +69,4 @@ export default CertificateCard;
 // Vaagai/Website 2.0
 // Vaagai/enmin certificate
 
-// TechVedhu DS Course 
+// TechVedhu DS Course
