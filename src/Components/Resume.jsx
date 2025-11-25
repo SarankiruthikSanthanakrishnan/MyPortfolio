@@ -1,10 +1,10 @@
-import { useEffect } from "react";
-import CV from "../assets/Resume.pdf";
-import Footer from "./Footer";
+import { useEffect } from 'react';
+import CV from '../assets/Resume.pdf';
+import Footer from './Footer';
 
 const Resume = () => {
   useEffect(() => {
-    document.title = "Sarankiruthik | Resume";
+    document.title = 'Sarankiruthik | Resume';
   }, []);
 
   return (
@@ -37,44 +37,48 @@ const Resume = () => {
               {/* Left Column for the Map */}
               <div className="col-12 col-lg-4">
                 <div className="embed-responsive embed-responsive-16by9">
-                <iframe
-          src="https://maps.google.com/maps?q=Solakkalipalayam,Chennasamudram&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="eager"
-          title="Google Map Location"
-        ></iframe>
+                  <iframe
+                    src="https://maps.google.com/maps?q=Solakkalipalayam,Chennasamudram&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="450"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="eager"
+                    title="Google Map Location"
+                  ></iframe>
                 </div>
               </div>
 
               {/* Right Column for the Data Table */}
-              <div className="col-12 col-lg-8 w-lg-100" >
+              <div className="col-12 col-lg-8 w-lg-100">
                 <table className="table table-borderless text-light fs-5">
                   <tbody>
                     <tr>
-                      <td className="fw-bold text-light w-25" >
-                        Name
-                      </td>
-                      <td >: SARAN KIRUTHIK S S</td>
+                      <td className="fw-bold text-light w-25">Name</td>
+                      <td>: SARAN KIRUTHIK S S</td>
                     </tr>
                     <tr>
                       <td className="fw-bold text-light w-25">Address</td>
-                      <td >: 57/3,East Street, Government Hospital Road, Solakkalipalayam,<br />Chennasamudram, Kodumudi,Tamilnadu</td>
+                      <td>
+                        : 57/3,East Street, Government Hospital Road,
+                        Solakkalipalayam,
+                        <br />
+                        Chennasamudram, Kodumudi,Tamilnadu
+                      </td>
                     </tr>
                     <tr>
-                      <td className="fw-bold text-light w-25">Phone
-                      </td>
+                      <td className="fw-bold text-light w-25">Phone</td>
                       <td>: +91 8072682003</td>
                     </tr>
                     <tr>
                       <td className="fw-bold text-light w-25">Email</td>
                       <td>
-                        <a className="w-75"
-                          style={{ textDecoration: "none", color: "white" }}
+                        <a
+                          className="w-75"
+                          style={{ textDecoration: 'none', color: 'white' }}
                           href="mailto:skiruthik2510@gmail.com"
-                        >: skiruthik2510@gmail.com
+                        >
+                          : skiruthik2510@gmail.com
                         </a>
                       </td>
                     </tr>
@@ -133,76 +137,57 @@ const Resume = () => {
         </div>
 
         {/* Technical skills & Career Ideas */}
+        {/* Technical skills & Career Ideas */}
         <div className="row g-4 mt-4">
-          <div id="tk" className="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+          {/* Technical Skills */}
+          <div id="tk" className="col-lg-6 col-md-12">
             <div className="card bg-secondary text-light p-4">
               <h2 className="text-center text-info fw-bold mb-3">
                 Technical Knowledge
               </h2>
-              <ul className="list-unstyled row row-cols-md-2 g-2 fs-5 text-start">
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>Python
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>Java
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>C
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>HTML
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>CSS
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>
-                  Bootstrap 5
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>
-                  Powerpoint
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>SQL
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>Excel
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>
-                  JavaScript
-                </li>
-                <li className="col">
-                  <i className="bi bi-check2-circle text-light me-2"></i>Git &
-                  GitHub
-                </li>
+
+              <ul className="list-unstyled row g-2 fs-5 text-start">
+                {[
+                  'Python',
+                  'Java',
+                  'C',
+                  'HTML',
+                  'CSS',
+                  'Bootstrap 5',
+                  'Powerpoint',
+                  'SQL',
+                  'Excel',
+                  'JavaScript',
+                  'Git & GitHub',
+                ].map((skill, index) => (
+                  <li key={index} className="col-12 d-flex align-items-center">
+                    <i className="bi bi-check2-circle text-light me-2"></i>
+                    <span>{skill}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
 
-          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+          {/* Career Ideas */}
+          <div className="col-lg-6 col-md-12">
             <div className="card bg-secondary text-light p-4">
               <h2 className="text-center text-info fw-bold mb-3">
                 Career Ideas
               </h2>
-              <ul className="list-unstyled row row-cols-md-2 g-2 fs-5 text-start">
-                <li className="col-12">
-                  <i className="bi bi-check2-circle text-light me-2"></i>
-                  Software Developing
-                </li>
-                <li className="col-12">
-                  <i className="bi bi-check2-circle text-light me-2"></i>
-                  Programmer
-                </li>
-                <li className="col-12">
-                  <i className="bi bi-check2-circle text-light me-2"></i>Web
-                  Designing
-                </li>
-                <li className="col-12">
-                  <i className="bi bi-check2-circle text-light me-2"></i>Full
-                  Stack Development
-                </li>
+
+              <ul className="list-unstyled row g-2 fs-5 text-start">
+                {[
+                  'Software Developing',
+                  'Programmer',
+                  'Web Designing',
+                  'Full Stack Development',
+                ].map((career, index) => (
+                  <li key={index} className="col-12 d-flex align-items-center">
+                    <i className="bi bi-check2-circle text-light me-2"></i>
+                    <span>{career}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -219,29 +204,29 @@ const Resume = () => {
                 <ul className="list-unstyled">
                   <li className="mb-2">
                     <i className="bi bi-award-fill text-warning me-2"></i>
-                    Attended a Valuable workshop on{" "}
-                    <strong>Mongo DB Atlas</strong> in{" "}
+                    Attended a Valuable workshop on{' '}
+                    <strong>Mongo DB Atlas</strong> in{' '}
                     <strong> Rasipuram </strong>Which is conducted by
                     Muthayammal College of Engineering and Technology on
                     15-April-2023
                   </li>
                   <li>
                     <i className="bi bi-trophy-fill text-warning me-2"></i>
-                    <strong>Won 1st prize </strong>for{" "}
+                    <strong>Won 1st prize </strong>for{' '}
                     <strong>Project Idea Presentation </strong>in National Level
-                    Technical Symposium at{" "}
+                    Technical Symposium at{' '}
                     <strong>Selvam College of Technology</strong> on
                     05-April-2024
                   </li>
                   <li>
                     <i className="bi bi-award-fill text-warning me-2"></i>
-                    Attended a Valuable workshop on{" "}
+                    Attended a Valuable workshop on{' '}
                     <strong>Web Development</strong> in <strong> Salem </strong>
                     Which is conducted by VR Soft Tech on 16-Feb-2025
                   </li>
                   <li>
                     <i className="bi bi-award-fill text-warning me-2"></i>
-                    Attended a Valuable workshop on{" "}
+                    Attended a Valuable workshop on{' '}
                     <strong>
                       Python Programming (Basic to Advance)
                     </strong> in <strong> Salem </strong>Which is conducted by
