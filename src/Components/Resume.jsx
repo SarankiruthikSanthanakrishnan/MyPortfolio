@@ -146,7 +146,8 @@ const Resume = () => {
                 Technical Knowledge
               </h2>
 
-              <ul className="list-unstyled row g-2 fs-5 text-start">
+              {/* 2 Columns in large screen, 1 column in mobile */}
+              <ul className="list-unstyled row row-cols-1 row-cols-md-2 g-2 fs-5 text-start">
                 {[
                   'Python',
                   'Java',
@@ -160,9 +161,9 @@ const Resume = () => {
                   'JavaScript',
                   'Git & GitHub',
                 ].map((skill, index) => (
-                  <li key={index} className="col-12 d-flex align-items-center">
+                  <li key={index} className="d-flex align-items-center">
                     <i className="bi bi-check2-circle text-light me-2"></i>
-                    <span>{skill}</span>
+                    {skill}
                   </li>
                 ))}
               </ul>
@@ -176,16 +177,17 @@ const Resume = () => {
                 Career Ideas
               </h2>
 
-              <ul className="list-unstyled row g-2 fs-5 text-start">
+              {/* 2 Columns in large screen, 1 column in mobile */}
+              <ul className="list-unstyled row row-cols-1 row-cols-md-2 g-2 fs-5 text-start">
                 {[
                   'Software Developing',
                   'Programmer',
                   'Web Designing',
                   'Full Stack Development',
                 ].map((career, index) => (
-                  <li key={index} className="col-12 d-flex align-items-center">
+                  <li key={index} className="d-flex align-items-center">
                     <i className="bi bi-check2-circle text-light me-2"></i>
-                    <span>{career}</span>
+                    {career}
                   </li>
                 ))}
               </ul>
