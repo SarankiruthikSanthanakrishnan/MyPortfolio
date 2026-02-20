@@ -29,7 +29,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold">
-              SARANKIRUTHIK S S
+              SARAN KIRUTHIK S S
             </h1>
             <p className="text-gray-400 mt-2">
               B.Tech | Artificial Intelligence And Data Science
@@ -144,9 +144,9 @@ const Home = () => {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span>Core Java</span>
-                    <span>35%</span>
+                    <span>70%</span>
                   </div>
-                  <SkillBar percent={'35%'} />
+                  <SkillBar percent={'70%'} />
                 </div>
                 <div>
                   <div className="flex justify-between mb-1">
@@ -165,6 +165,13 @@ const Home = () => {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span>JavaScript</span>
+                    <span>85%</span>
+                  </div>
+                  <SkillBar percent={'85%'} />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>Git & GitHub</span>
                     <span>85%</span>
                   </div>
                   <SkillBar percent={'85%'} />
