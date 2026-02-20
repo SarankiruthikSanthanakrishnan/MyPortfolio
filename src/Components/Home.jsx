@@ -1,218 +1,209 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react';
+import {
+  Download,
+  Linkedin,
+  Github,
+  Instagram,
+  LinkedinIcon,
+  GithubIcon,
+} from 'lucide-react';
 import Saran from '../assets/saran.jpg';
-import './Home.css'
+// Home styles migrated to Tailwind; removed Home.css import
 import Footer from './Footer';
-import CV from '../assets/Resume.pdf'
+import CV from '../assets/Resume.pdf';
+
+const SkillBar = ({ percent }) => (
+  <div className="w-full bg-gray-700 rounded h-6">
+    <div className="h-6 bg-cyan-500 rounded" style={{ width: percent }} />
+  </div>
+);
 
 const Home = () => {
-    useEffect(() => {
-        document.title = 'Sarankiruthik | Home';
-    }, []);
+  useEffect(() => {
+    document.title = 'Sarankiruthik | Home';
+  }, []);
 
-    return (
-        <>
-            <div className="container-fluid bg-dark text-light py-5">
-                {/* Header section */}
-                <div className="row g-4 justify-content-center">
-                    <div className="col-12 text-center">
-                        <section className="mb-4">
-                            <h1 className="display-5 fw-bold mb-0">SARANKIRUTHIK SANTHANAKRISHNAN</h1>
-                            <p className="lead fs-5 text-muted">B.Tech | Artificial Intelligence And Data Science</p>
-                        </section>
-                    </div>
+  return (
+    <>
+      <div className="bg-gray-900 text-white py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold">
+              SARANKIRUTHIK SANTHANAKRISHNAN
+            </h1>
+            <p className="text-gray-400 mt-2">
+              B.Tech | Artificial Intelligence And Data Science
+            </p>
+          </div>
 
-                    {/* Profile image and links */}
-                    <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center">
-                        <img
-                            src={Saran}
-                            className="rounded-circle img-fluid shadow-lg mb-4 profile-img"
-                            alt="my-photo"
-                        />
-                        <div className="d-flex justify-content-center ">
-                            <a
-                                className="btn btn-success fw-bold w-100"
-                                href={CV}
-                                download="SARAN KIRUTHik S S"
-                            >
-                                <i className="bi bi-download"></i>
-                                &nbsp;<br />Download Resume
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* About Me section */}
-                    <div className="card bg-secondary text-light p-4 col-xxl-8 col-xl-8 col-lg-8 col-md-12">
-                        <div className="card-body">
-                            <h2 className="text-center fw-bolder fs-3 mb-4">
-                                <i className="bi bi-file-person me-2"></i>About me
-                            </h2>
-                            <p className="text-justify fs-5">
-                                I am a passionate and dedicated student, embarking on an academic journey fueled by
-                                curiosity and a relentless pursuit of knowledge. Currently pursuing <b className="fw-bold text-info">B.TECH - Artificial
-                                Intelligence and Data Science at Gnanamani College of Technology, Namakkal</b>, I thrive in the
-                                dynamic intersection of theory and practical application. As an avid learner, I actively engage
-                                in both coursework and extracurricular activities to broaden my perspectives and enhance my
-                                skill set. With a keen interest in Full-stack Development, I am committed to leveraging my
-                                academic prowess to contribute meaningfully to the field. My portfolio showcases not only my
-                                academic achievements but also my projects, experiences, and the unique blend of skills that
-                                define me. Beyond the classroom I am constantly seeking opportunities to collaborate and create
-                                innovative solutions. Join me on this journey as I navigate the exciting challenges of
-                                academia and beyond, driven by a genuine passion for continuous growth and success.
-                            </p>
-                            <section className="mt-4">
-                                <div className="row fs-1 text-center">
-                                    <div className="col">
-                                        <a className="text-decoration-none text-info hover-scale" href="https://www.linkedin.com/in/sarankiruthiksanthanakrishnan/">
-                                            <i className="bi bi-linkedin"></i>
-                                        </a>
-                                    </div>
-                                    <div className="col">
-                                        <a className="text-decoration-none text-info hover-scale" href="https://github.com/SarankiruthikSanthanakrishnan">
-                                            <i className="bi bi-github"></i>
-                                        </a>
-                                    </div>
-                                    <div className="col">
-                                        <a className="text-decoration-none text-info hover-scale" href="https://www.instagram.com/sarankiruthiksanthanakrishnan">
-                                            <i className="bi bi-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    {/* Education section */}
-                    <div className="card bg-secondary text-light p-4 col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-                        <div className="card-body">
-                            <h2 className="fw-bolder fs-3 text-center mb-4">
-                                <i className="bi bi-backpack3-fill me-2"></i>Education
-                            </h2>
-                            {/* College */}
-                            <div className="d-flex align-items-center mb-3">
-                                <div className="me-auto">
-                                    <h3 className="fs-4 fw-bold">Gnanamani College of Technology</h3>
-                                    <p className="mb-0">B.Tech - Artificial Intelligence and Data Science</p>
-                                    <p className="text-warning fw-bolder mb-0">Currently Pursuing</p>
-                                    <small className="text-muted"><i className="bi bi-calendar3"></i> 2022-2026</small>
-                                </div>
-                                <div className="text-end fw-bolder fs-5 text-info">
-                                    <div className="circle-progress">
-                                        <div className="circle-inner">
-                                            <span className="progress-text">CGPA 77.9%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr className="my-3 text-info" />
-                            {/* HSC */}
-                            <div className="d-flex align-items-center mb-3">
-                                <div className="me-auto">
-                                    <h3 className="fs-4 fw-bold">S S V Higher Secondary School</h3>
-                                    <p className="mb-0">HSC - Higher Secondary Certificate</p>
-                                    <small className="text-muted"><i className="bi bi-calendar3"></i> 2020-2022</small>
-                                </div>
-                                <div className="text-end fw-bolder fs-5 text-info">
-                                    <div className="circle-progress1">
-                                        <div className="circle-inner">
-                                            <span className="progress-text">84%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr className="my-3 text-info" />
-                            {/* SSLC */}
-                            <div className="d-flex align-items-center">
-                                <div className="me-auto">
-                                    <h3 className="fs-4 fw-bold">S S V Higher Secondary School</h3>
-                                    <p className="mb-0">SSLC - Secondary School Leaving Certificate</p>
-                                    <small className="text-muted"><i className="bi bi-calendar3"></i> 2015-2020</small>
-                                </div>
-                                <div className="text-end fw-bolder fs-5 text-info">
-                                    <div className="circle-progress2">
-                                        <div className="circle-inner">
-                                            <span className="progress-text">71.2%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Skills section */}
-                    <div className="card bg-secondary text-light p-4 col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-                        <div className="card-body">
-                            <h2 className="text-center fw-bolder fs-3 mb-4">
-                                <i className="bi bi-bookmark-star-fill me-2"></i>Skills
-                            </h2>
-                            {/* Skills with colored progress bars */}
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-py"></i>&nbsp;Python Programming Language</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Python skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '60%'}}>60%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-java"></i>&nbsp;Core Java Programming Language</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Core Java skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '35%'}}>35%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-c-circle"></i> C Programming Language</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="C skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '80%'}}>80%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-file-earmark-spreadsheet-fill"></i>&nbsp;Excel</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Excel skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '40%'}}>40%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-code-slash"></i>&nbsp;Web Development</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Web Development skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '75%'}}>75%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-camera2"></i>&nbsp;Adobe Photoshop</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="Adobe Photoshop skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '30%'}}>30%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-sql"></i>&nbsp;Structure Query Language</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="SQL skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '50%'}}>50%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-php"></i>&nbsp;PHP</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="PHP skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '85%'}}>85%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-js"></i>&nbsp;JavaScript</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="JavaScript skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '85%'}}>85%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold"><i className="bi bi-filetype-jsx"></i>&nbsp;React js</h3>
-                            <div className="progress mb-3" style={{height: '25px'}} role="progressbar" aria-label="JavaScript skill">
-                                <div className="progress-bar progress-bar-striped progress-bar-animated bg-purple" style={{width: '75%'}}>75%</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Languages Known section */}
-                    <div className="card bg-secondary text-light p-4 col-12">
-                        <div className="card-body">
-                            <h2 className="text-center fw-bolder fs-3 mb-4">
-                                <i className="bi bi-translate me-2"></i>Languages Known
-                            </h2>
-                            <h3 className="fs-5 fw-bold">Tamil</h3>
-                            <div className="progress mb-3" role="progressbar" style={{height: '25px'}}>
-                                <div className="progress-bar bg-info" style={{width: '100%'}}>100%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold">English</h3>
-                            <div className="progress mb-3" role="progressbar" style={{height: '25px'}}>
-                                <div className="progress-bar bg-info" style={{width: '80%'}}>80%</div>
-                            </div>
-                            <h3 className="fs-5 fw-bold">Hindi</h3>
-                            <div className="progress" role="progressbar" style={{height: '25px'}}>
-                                <div className="progress-bar bg-info" style={{width: '20%'}}>20%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-3 items-start">
+            <div className="flex flex-col items-center md:items-start">
+              <img
+                src={Saran}
+                alt="my-photo"
+                className="rounded-full shadow-xl w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 object-cover"
+              />
+              <a
+                className="mt-4 inline-flex bg-green-500 text-white font-bold px-4 py-2 rounded w-full md:w-auto text-center items-center justify-center gap-2"
+                href={CV}
+                download="SARAN KIRUTHik S S"
+              >
+                <Download className="w-4 h-4" /> <span>Download Resume</span>
+              </a>
             </div>
-            <Footer/>
-        </>
-    )
-}
+
+            <div className="md:col-span-2 bg-slate-800 rounded p-6">
+              <h2 className="text-xl font-semibold mb-3">About me</h2>
+              <p className="text-sm text-gray-200 text-justify">
+                I am a passionate and dedicated student, embarking on an
+                academic journey fueled by curiosity and a relentless pursuit of
+                knowledge. Currently pursuing{' '}
+                <strong className="text-cyan-300">
+                  B.TECH - Artificial Intelligence and Data Science at Gnanamani
+                  College of Technology, Namakkal
+                </strong>
+                , I thrive in the dynamic intersection of theory and practical
+                application. As an avid learner, I actively engage in both
+                coursework and extracurricular activities to broaden my
+                perspectives and enhance my skill set. With a keen interest in
+                Full-stack Development, I am committed to leveraging my academic
+                prowess to contribute meaningfully to the field.
+              </p>
+
+              <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                <a
+                  className="text-cyan-300 hover:underline"
+                  href="https://www.linkedin.com/in/sarankiruthiksanthanakrishnan/"
+                >
+                  <LinkedinIcon className="w-6 h-6" />
+                </a>
+                <a
+                  className="text-cyan-300 hover:underline"
+                  href="https://github.com/SarankiruthikSanthanakrishnan"
+                >
+                  <GithubIcon className="w-6 h-6" />
+                </a>
+                <a
+                  className="text-cyan-300 hover:underline"
+                  href="https://www.instagram.com/sarankiruthiksanthanakrishnan"
+                >
+                  <Instagram />
+                </a>
+              </div>
+            </div>
+
+            {/* Education */}
+            <div className="bg-slate-800 rounded p-6 md:col-span-1">
+              <h2 className="text-lg font-semibold text-center mb-4">
+                Education
+              </h2>
+              <div className="mb-4">
+                <h3 className="font-bold">Gnanamani College of Technology</h3>
+                <p className="text-sm">
+                  B.Tech - Artificial Intelligence and Data Science
+                </p>
+                <p className="text-cyan-300 font-semibold">
+                  Currently Pursuing
+                </p>
+                <div className="mt-2 text-sm text-gray-300">CGPA 77.9%</div>
+              </div>
+
+              <hr className="border-gray-700 my-3" />
+
+              <div className="mb-4">
+                <h3 className="font-bold">S S V Higher Secondary School</h3>
+                <p className="text-sm">HSC - Higher Secondary Certificate</p>
+                <div className="mt-2 text-sm text-gray-300">84%</div>
+              </div>
+
+              <hr className="border-gray-700 my-3" />
+
+              <div>
+                <h3 className="font-bold">S S V Higher Secondary School</h3>
+                <p className="text-sm">
+                  SSLC - Secondary School Leaving Certificate
+                </p>
+                <div className="mt-2 text-sm text-gray-300">71.2%</div>
+              </div>
+            </div>
+
+            {/* Skills */}
+            <div className="bg-slate-800 rounded p-6 md:col-span-2">
+              <h2 className="text-lg font-semibold text-center mb-4">Skills</h2>
+
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>Python</span>
+                    <span>60%</span>
+                  </div>
+                  <SkillBar percent={'60%'} />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>Core Java</span>
+                    <span>35%</span>
+                  </div>
+                  <SkillBar percent={'35%'} />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>C Programming</span>
+                    <span>80%</span>
+                  </div>
+                  <SkillBar percent={'80%'} />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>Web Development</span>
+                    <span>75%</span>
+                  </div>
+                  <SkillBar percent={'75%'} />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>JavaScript</span>
+                    <span>85%</span>
+                  </div>
+                  <SkillBar percent={'85%'} />
+                </div>
+              </div>
+            </div>
+
+            {/* Languages */}
+            <div className="bg-slate-800 rounded p-6 md:col-span-3">
+              <h2 className="text-lg font-semibold text-center mb-4">
+                Languages Known
+              </h2>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>Tamil</span>
+                    <span>100%</span>
+                  </div>
+                  <SkillBar percent={'100%'} />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>English</span>
+                    <span>80%</span>
+                  </div>
+                  <SkillBar percent={'80%'} />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span>Hindi</span>
+                    <span>20%</span>
+                  </div>
+                  <SkillBar percent={'20%'} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Home;

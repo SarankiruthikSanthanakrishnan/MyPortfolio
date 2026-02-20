@@ -1,26 +1,25 @@
 // Certifications.jsx
-import { useEffect } from "react";
-import CertificateCard from "./CertificateCard";
-import certificatesData from "../assets/Certificate.json";
-import Footer from "./Footer";
-import './Certificate.css'
+import { useEffect } from 'react';
+import CertificateCard from './CertificateCard';
+import certificatesData from '../assets/Certificate.json';
+// Certificate styles migrated to Tailwind; removed Certificate.css import
 
 const Certifications = () => {
   useEffect(() => {
-    document.title = "Sarankiruthik | Certifications";
+    document.title = 'Sarankiruthik | Certifications';
   }, []);
 
   return (
     <>
-      <div className="main">
-        <div className=" certificate-container container ">
-          <div className="row g-4">
+      <section className="py-12 bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">
+            Certifications
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-3 place-items-center">
             {certificatesData.map((certificate) => (
-              <div
-                className="col-12 col-md-6 col-lg-4  d-flex justify-content-center mb-4 "
-                style={{ marginTop: "60px" }}
-                key={certificate.id}
-              >
+              <div key={certificate.id} className="mb-6 mt-6">
                 <CertificateCard
                   certificateTitle={certificate.course}
                   certificateImg={certificate.imageSrc}
@@ -31,9 +30,7 @@ const Certifications = () => {
             ))}
           </div>
         </div>
-      </div>
-
-      <Footer />
+      </section>
     </>
   );
 };

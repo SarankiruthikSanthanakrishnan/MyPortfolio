@@ -1,25 +1,35 @@
-import './Certificate.css'
+// Certificate styles migrated to Tailwind; removed Certificate.css import
 
-const CertificateCard = ({certificateTitle,certificateImg,conductor,dateofissue}) => {
-     function createGitHubImageUrl(fileName) {
-  const baseUrl = "https://raw.githubusercontent.com/SarankiruthikSanthanakrishnan/FIles/main/";
-  const encodedFileName = fileName.replace(/ /g, '%20');
-  return `${baseUrl}${encodedFileName}`;
-}
-const fileNameWithSpaces = certificateImg;
-const imageUrl = createGitHubImageUrl(fileNameWithSpaces);
+const CertificateCard = ({
+  certificateTitle,
+  certificateImg,
+  conductor,
+  dateofissue,
+}) => {
+  function createGitHubImageUrl(fileName) {
+    const baseUrl =
+      'https://raw.githubusercontent.com/SarankiruthikSanthanakrishnan/FIles/main/';
+    const encodedFileName = fileName.replace(/ /g, '%20');
+    return `${baseUrl}${encodedFileName}`;
+  }
+
+  const imageUrl = createGitHubImageUrl(certificateImg);
+
   return (
-    <>
-    <div className="card wrapper  h-100" style={{width: '22rem'}}>
-    <img src={imageUrl} className="card-img-top img-thumbnail w-100 " style={{width:"200px",objectFit:'cover'}}/>
-  <div className="card-body">
-    <h5 className="card-title text-primary">{certificateTitle}</h5>
-    <p className="card-text">{conductor}</p>
-    <p className="card-text">{dateofissue}</p>
-    
-  </div>
-</div>
-    </>
+    <div className="w-80 bg-slate-800 text-white rounded-lg overflow-hidden shadow-lg">
+      <img
+        src={imageUrl}
+        alt={certificateTitle}
+        className="w-full h-40 object-cover"
+      />
+      <div className="p-4">
+        <h5 className="text-lg font-semibold text-cyan-300">
+          {certificateTitle}
+        </h5>
+        <p className="text-sm text-gray-300">{conductor}</p>
+        <p className="text-sm text-gray-400 mt-2">{dateofissue}</p>
+      </div>
+    </div>
   );
 };
 
@@ -31,14 +41,12 @@ export default CertificateCard;
 // College Events/Selvam ASTA 2K25
 // College Events/VR Soft Tech
 
-
 // Great Learning/C FOR BEGINNERS
 // Great Learning/Front End Development
 // Great Learning/HTML CERTIFICATE
 
 // Hacker Rank/Java Certificate Hacker Rank
 // Hacker Rank/javascript_basic certificate
-
 
 // Internships/Arttifia Tech Certificate
 // Internships/CodeAlpha Certificate

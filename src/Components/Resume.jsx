@@ -1,246 +1,214 @@
 import { useEffect } from 'react';
 import CV from '../assets/Resume.pdf';
-import Footer from './Footer';
+import { Download, CheckCircle, Award, Trophy } from 'lucide-react';
 
 const Resume = () => {
   useEffect(() => {
     document.title = 'Sarankiruthik | Resume';
   }, []);
 
+  const technicalSkills = [
+    'Python',
+    'Java',
+    'C',
+    'HTML',
+    'CSS',
+    'Bootstrap 5',
+    'Powerpoint',
+    'SQL',
+    'Excel',
+    'JavaScript',
+    'Git & GitHub',
+  ];
+
+  const careers = [
+    'Software Developing',
+    'Programmer',
+    'Web Designing',
+    'Full Stack Development',
+  ];
+
   return (
     <>
-      <div className="container-fluid bg-dark text-light py-5">
-        {/* Header */}
-        <div className="row">
-          <div className="col-12 text-center d-block mx-auto">
-            <h1 className="display-5 fw-bolder">Resume</h1>
-          </div>
-        </div>
+      <div className="bg-gray-900 text-white py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-6">
+            <h1 className="text-3xl font-bold">Resume</h1>
 
-        {/* Download Button */}
-        <div className="row justify-content-center mt-4">
-          <div className="col-auto">
-            <a
-              className="btn btn-info text-dark fw-bold px-4 py-3"
-              href={CV}
-              download="SARAN KIRUTHIK S S"
-            >
-              <i className="bi bi-download me-2"></i>Download Resume
-            </a>
+            <div className="mt-4 flex justify-center md:justify-end">
+              <a
+                href={CV}
+                download
+                className="bg-cyan-400 text-gray-900 font-semibold px-5 py-2 rounded flex items-center gap-2 hover:bg-cyan-300 transition"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download Resume</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        {/* Profile */}
-        <div id="profile" className="card bg-secondary text-light fs-5 mt-4">
-          <div className="card-body">
-            <div className="row g-4 d-flex align-items-center">
-              {/* Left Column for the Map */}
-              <div className="col-12 col-lg-4">
-                <div className="embed-responsive embed-responsive-16by9">
-                  <iframe
-                    src="https://maps.google.com/maps?q=Solakkalipalayam,Chennasamudram&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    width="100%"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="eager"
-                    title="Google Map Location"
-                  ></iframe>
+          <div className="grid gap-6 md:grid-cols-3 mb-8">
+            <div className="md:col-span-1">
+              <iframe
+                src="https://maps.google.com/maps?q=Solakkalipalayam,Chennasamudram&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="eager"
+                title="Google Map Location"
+                className="rounded w-full h-40 md:h-60"
+              />
+            </div>
+
+            <div className="md:col-span-2 bg-slate-800 rounded p-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <div className="font-semibold">Name</div>
+                  <div>SARAN KIRUTHIK S S</div>
                 </div>
-              </div>
-
-              {/* Right Column for the Data Table */}
-              <div className="col-12 col-lg-8 w-lg-100">
-                <table className="table table-borderless text-light fs-5">
-                  <tbody>
-                    <tr>
-                      <td className="fw-bold text-light w-25">Name</td>
-                      <td>: SARAN KIRUTHIK S S</td>
-                    </tr>
-                    <tr>
-                      <td className="fw-bold text-light w-25">Address</td>
-                      <td>
-                        : 57/3,East Street, Government Hospital Road,
-                        Solakkalipalayam,
-                        <br />
-                        Chennasamudram, Kodumudi,Tamilnadu
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="fw-bold text-light w-25">Phone</td>
-                      <td>: +91 8072682003</td>
-                    </tr>
-                    <tr>
-                      <td className="fw-bold text-light w-25">Email</td>
-                      <td>
-                        <a
-                          className="w-75"
-                          style={{ textDecoration: 'none', color: 'white' }}
-                          href="mailto:skiruthik2510@gmail.com"
-                        >
-                          : skiruthik2510@gmail.com
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div>
+                  <div className="font-semibold">Phone</div>
+                  <div>+91 8072682003</div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="font-semibold">Address</div>
+                  <div>
+                    57/3, East Street, Government Hospital Road,
+                    Solakkalipalayam, Chennasamudram, Kodumudi, Tamilnadu
+                  </div>
+                </div>
+                <div>
+                  <div className="font-semibold">Email</div>
+                  <div>
+                    <a
+                      className="underline text-cyan-300"
+                      href="mailto:skiruthik2510@gmail.com"
+                    >
+                      skiruthik2510@gmail.com
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Education */}
-        <div id="education" className="row mt-4">
-          <div className="col-12">
-            <h2 className="text-center text-info fw-bold mb-3">Education</h2>
-            <div className="table-responsive">
-              <table className="table table-bordered table-dark table-striped fs-5">
+          <section className="mb-8">
+            <h2 className="text-2xl text-center font-bold text-cyan-300 mb-4">
+              Education
+            </h2>
+            <div className="overflow-x-auto bg-slate-800 rounded">
+              <table className="min-w-full text-sm">
                 <thead>
-                  <tr className="table-primary text-dark">
-                    <th>S.no</th>
-                    <th>Degree/Course</th>
-                    <th>Institute/College</th>
-                    <th>University/Board</th>
-                    <th>Percentage/CGPA</th>
-                    <th>Year of Passing</th>
+                  <tr className="text-left border-b border-gray-700">
+                    <th className="px-4 py-2">S.no</th>
+                    <th className="px-4 py-2">Degree/Course</th>
+                    <th className="px-4 py-2">Institute/College</th>
+                    <th className="px-4 py-2">University/Board</th>
+                    <th className="px-4 py-2">Percentage/CGPA</th>
+                    <th className="px-4 py-2">Year of Passing</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1.</td>
-                    <td>B.Tech Artificial Intelligence And Data Science</td>
-                    <td>GNANMANI COLLEGE OF TECHNOLOGY, A K SAMUDRAM,PACHAL</td>
-                    <td>Anna University</td>
-                    <td>7.79 CGPA (Upto to 5th sem)</td>
-                    <td>Pursuing</td>
+                  <tr className="border-b border-gray-800">
+                    <td className="px-4 py-2">1.</td>
+                    <td className="px-4 py-2">
+                      B.Tech Artificial Intelligence And Data Science
+                    </td>
+                    <td className="px-4 py-2">
+                      GNANMANI COLLEGE OF TECHNOLOGY, A K SAMUDRAM,PACHAL
+                    </td>
+                    <td className="px-4 py-2">Anna University</td>
+                    <td className="px-4 py-2">8.13 CGPA (Upto to 7th sem)</td>
+                    <td className="px-4 py-2">Pursuing</td>
+                  </tr>
+                  <tr className="border-b border-gray-800">
+                    <td className="px-4 py-2">2.</td>
+                    <td className="px-4 py-2">HIGHER SECONDARY COURSE</td>
+                    <td className="px-4 py-2">
+                      SSV HIGHER SECONDARY SCHOOL,KODUMUDI
+                    </td>
+                    <td className="px-4 py-2">Stateboard</td>
+                    <td className="px-4 py-2">84%</td>
+                    <td className="px-4 py-2">2022</td>
                   </tr>
                   <tr>
-                    <td>2.</td>
-                    <td>HIGHER SECONDARY COURSE</td>
-                    <td>SSV HIGHER SECONDARY SCHOOL,KODUMUDI</td>
-                    <td>Stateboard</td>
-                    <td>84%</td>
-                    <td>2022</td>
-                  </tr>
-                  <tr>
-                    <td>3.</td>
-                    <td>SCHOOL SECONDARY LEAVING CERTIFICATE</td>
-                    <td>SSV HIGHER SECONDARY SCHOOL ,KODUMUDI</td>
-                    <td>Stateboard</td>
-                    <td>71.2%</td>
-                    <td>2020</td>
+                    <td className="px-4 py-2">3.</td>
+                    <td className="px-4 py-2">
+                      SCHOOL SECONDARY LEAVING CERTIFICATE
+                    </td>
+                    <td className="px-4 py-2">
+                      SSV HIGHER SECONDARY SCHOOL ,KODUMUDI
+                    </td>
+                    <td className="px-4 py-2">Stateboard</td>
+                    <td className="px-4 py-2">71.2%</td>
+                    <td className="px-4 py-2">2020</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
+          </section>
 
-        {/* Technical skills & Career Ideas */}
-        {/* Technical skills & Career Ideas */}
-        <div className="row g-4 mt-4">
-          {/* Technical Skills */}
-          <div id="tk" className="col-lg-6 col-md-12">
-            <div className="card bg-secondary text-light p-4">
-              <h2 className="text-center text-info fw-bold mb-3">
+          <div className="grid gap-6 md:grid-cols-2 mb-8">
+            <div className="bg-slate-800 rounded p-4">
+              <h3 className="text-xl font-semibold text-cyan-300 mb-3">
                 Technical Knowledge
-              </h2>
-
-              {/* 2 Columns in large screen, 1 column in mobile */}
-              <ul className="list-unstyled row row-cols-1 row-cols-md-2 g-2 fs-5 text-start">
-                {[
-                  'Python',
-                  'Java',
-                  'C',
-                  'HTML',
-                  'CSS',
-                  'Bootstrap 5',
-                  'Powerpoint',
-                  'SQL',
-                  'Excel',
-                  'JavaScript',
-                  'Git & GitHub',
-                ].map((skill, index) => (
-                  <li key={index} className="d-flex align-items-center">
-                    <i className="bi bi-check2-circle text-light me-2"></i>
-                    {skill}
+              </h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                {technicalSkills.map((skill, idx) => (
+                  <li key={idx} className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-cyan-300" />{' '}
+                    <span>{skill}</span>
                   </li>
                 ))}
               </ul>
             </div>
-          </div>
 
-          {/* Career Ideas */}
-          <div className="col-lg-6 col-md-12">
-            <div className="card bg-secondary text-light p-4">
-              <h2 className="text-center text-info fw-bold mb-3">
+            <div className="bg-slate-800 rounded p-4">
+              <h3 className="text-xl font-semibold text-cyan-300 mb-3">
                 Career Ideas
-              </h2>
-
-              {/* 2 Columns in large screen, 1 column in mobile */}
-              <ul className="list-unstyled row row-cols-1 row-cols-md-2 g-2 fs-5 text-start">
-                {[
-                  'Software Developing',
-                  'Programmer',
-                  'Web Designing',
-                  'Full Stack Development',
-                ].map((career, index) => (
-                  <li key={index} className="d-flex align-items-center">
-                    <i className="bi bi-check2-circle text-light me-2"></i>
-                    {career}
+              </h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                {careers.map((c, idx) => (
+                  <li key={idx} className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-cyan-300" />{' '}
+                    <span>{c}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-        </div>
 
-        {/* Accomplishment */}
-        <div className="row mt-4 mx-auto">
-          <div className="card bg-secondary text-light p-4 col-12" id="achieve">
-            <div className="card-body">
-              <h2 className="text-center text-info fw-bold mb-3">
-                Accomplishments
-              </h2>
-              <div className="fs-5">
-                <ul className="list-unstyled">
-                  <li className="mb-2">
-                    <i className="bi bi-award-fill text-warning me-2"></i>
-                    Attended a Valuable workshop on{' '}
-                    <strong>Mongo DB Atlas</strong> in{' '}
-                    <strong> Rasipuram </strong>Which is conducted by
-                    Muthayammal College of Engineering and Technology on
-                    15-April-2023
-                  </li>
-                  <li>
-                    <i className="bi bi-trophy-fill text-warning me-2"></i>
-                    <strong>Won 1st prize </strong>for{' '}
-                    <strong>Project Idea Presentation </strong>in National Level
-                    Technical Symposium at{' '}
-                    <strong>Selvam College of Technology</strong> on
-                    05-April-2024
-                  </li>
-                  <li>
-                    <i className="bi bi-award-fill text-warning me-2"></i>
-                    Attended a Valuable workshop on{' '}
-                    <strong>Web Development</strong> in <strong> Salem </strong>
-                    Which is conducted by VR Soft Tech on 16-Feb-2025
-                  </li>
-                  <li>
-                    <i className="bi bi-award-fill text-warning me-2"></i>
-                    Attended a Valuable workshop on{' '}
-                    <strong>
-                      Python Programming (Basic to Advance)
-                    </strong> in <strong> Salem </strong>Which is conducted by
-                    Tutor Joes Computer Education on 06-July-2025
-                  </li>
-                </ul>
-              </div>
+          <section className="mb-8">
+            <h2 className="text-2xl text-center font-bold text-cyan-300 mb-4">
+              Accomplishments
+            </h2>
+            <div className="bg-slate-800 rounded p-4 text-sm">
+              <ul className="space-y-3">
+                <li>
+                  <Award className="w-4 h-4 inline mr-2 text-yellow-400" />{' '}
+                  Attended a workshop on <strong>Mongo DB Atlas</strong> at
+                  Muthayammal College (15-April-2023)
+                </li>
+                <li>
+                  <Trophy className="w-4 h-4 inline mr-2 text-yellow-400" /> Won
+                  1st prize for <strong>Project Idea Presentation</strong> at
+                  Selvam College (05-April-2024)
+                </li>
+                <li>
+                  <Award className="w-4 h-4 inline mr-2 text-yellow-400" />{' '}
+                  Attended a workshop on <strong>Web Development</strong> at VR
+                  Soft Tech (16-Feb-2025)
+                </li>
+                <li>
+                  <Award className="w-4 h-4 inline mr-2 text-yellow-400" />{' '}
+                  Attended a workshop on{' '}
+                  <strong>Python Programming (Basic to Advance)</strong> at
+                  Tutor Joes (06-July-2025)
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
