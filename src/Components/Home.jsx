@@ -29,7 +29,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold">
-              SARANKIRUTHIK SANTHANAKRISHNAN
+              SARANKIRUTHIK S S
             </h1>
             <p className="text-gray-400 mt-2">
               B.Tech | Artificial Intelligence And Data Science
@@ -37,18 +37,20 @@ const Home = () => {
           </div>
 
           <div className="grid gap-8 grid-cols-1 md:grid-cols-3 items-start">
-            <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start gap-4">
               <img
                 src={Saran}
                 alt="my-photo"
                 className="rounded-full shadow-xl w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 object-cover"
               />
+
               <a
-                className="mt-4 inline-flex bg-green-500 text-white font-bold px-4 py-2 rounded w-full md:w-auto text-center items-center justify-center gap-2"
                 href={CV}
                 download="SARAN KIRUTHik S S"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white font-bold px-5 py-2 rounded hover:bg-green-400 transition"
               >
-                <Download className="w-4 h-4" /> <span>Download Resume</span>
+                <Download className="w-4 h-4" />
+                <span>Download Resume</span>
               </a>
             </div>
 
@@ -105,7 +107,7 @@ const Home = () => {
                 <p className="text-cyan-300 font-semibold">
                   Currently Pursuing
                 </p>
-                <div className="mt-2 text-sm text-gray-300">CGPA 77.9%</div>
+                <div className="mt-2 text-sm text-gray-300">CGPA 81.3%</div>
               </div>
 
               <hr className="border-gray-700 my-3" />
